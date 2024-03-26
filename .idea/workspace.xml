@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e0ce170-a07c-47d0-8f52-02e4d35f19f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project.iml" afterDir="false" />
-    </list>
+    <list default="true" id="9e0ce170-a07c-47d0-8f52-02e4d35f19f8" name="Changes" comment="commit of project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +9,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2eF5wvslDBgvv5ge3NSKKK165Bz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,8 +34,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711487731079</updated>
-      <workItem from="1711487733010" duration="1299000" />
+      <workItem from="1711487733010" duration="1630000" />
     </task>
+    <task id="LOCAL-00001" summary="commit of project">
+      <created>1711490081193</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711490081193</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -54,5 +59,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit of project" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit of project" />
   </component>
 </project>
