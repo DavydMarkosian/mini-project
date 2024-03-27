@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+
+}
+h4{
+    margin: 5px;
+
+}
+a {
+    text-decoration: none;
+    color: #949494;
+
+}
+a:hover {
+    color: black;
+
+}
+
+.userBlock {
+    border: 1px black solid;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin: 10px;
+    min-width: 220px;
+
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.btn{
+
+}
