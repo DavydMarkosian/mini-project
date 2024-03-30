@@ -1,23 +1,19 @@
 body {
     margin: 0;
-
+    background-color: #f6f6f6;
 }
-h4{
+
+h4 {
     margin: 5px;
-
 }
+
 a {
     text-decoration: none;
     color: #949494;
-
-}
-a:hover {
-    color: black;
-
 }
 
 .userBlock {
-    border: 1px black solid;
+    border-radius: 5px;
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
@@ -26,14 +22,27 @@ a:hover {
     padding: 1%;
     margin: 10px;
     min-width: 220px;
-
+    border: 1px #2257ba solid;
+    background-color: white ;
+    box-shadow: #b6b6b6 5px 5px 10px;
 }
-.wrap{
+
+.wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
-.btn{
 
+.btn {
+    color: #646464;
+    cursor: pointer;
+    border-color: #949494;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgba(185, 213, 241, 0.59);
+    border-color: rgb(190, 215, 255);
 }
