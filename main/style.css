@@ -1,9 +1,11 @@
 body {
     margin: 0;
-    background-color: #f6f6f6;
+    background: rgb(175, 195, 255);
+    background: radial-gradient(circle, rgb(214, 224, 255) 0%, rgba(36,128,221,1) 100%);
 }
 
 h4 {
+    color: #08318c;
     margin: 5px;
 }
 
@@ -22,9 +24,9 @@ a {
     padding: 1%;
     margin: 10px;
     min-width: 220px;
-    border: 1px #2257ba solid;
-    background-color: white ;
-    box-shadow: #b6b6b6 5px 5px 10px;
+    border: 3px rgba(34, 87, 186, 0.33) solid;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: #eeeeee 5px 5px 10px;
 }
 
 .wrap {
@@ -36,13 +38,14 @@ a {
 .btn {
     color: #646464;
     cursor: pointer;
-    border-color: #949494;
-    border-radius: 5px;
+    border-color: #87afff;
+    border-radius: 25px 5px 25px 5px;
     padding: 9px;
+    background-color: rgba(255, 255, 255, 0.29);
 }
 
 .btn:hover {
-    color: black;
-    background-color: rgba(185, 213, 241, 0.59);
+    color: #002257;
+    background-color: rgba(185, 213, 241, 0.24);
     border-color: rgb(190, 215, 255);
 }

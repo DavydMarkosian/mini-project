@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e0ce170-a07c-47d0-8f52-02e4d35f19f8" name="Changes" comment="styles for index.html added">
-      <change afterPath="$PROJECT_DIR$/main/post-details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/post-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/post-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/user-details.css" afterDir="false" />
+    <list default="true" id="9e0ce170-a07c-47d0-8f52-02e4d35f19f8" name="Changes" comment="done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/post-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/post-details.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/post-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/post-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/user-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/user-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/user-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/user-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/user-details.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711487731079</updated>
-      <workItem from="1711487733010" duration="64920000" />
+      <workItem from="1711487733010" duration="75726000" />
     </task>
     <task id="LOCAL-00001" summary="commit of project">
       <created>1711490081193</created>
@@ -78,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711502143199</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done">
+      <created>1711775563949</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711775563949</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +102,7 @@
     <MESSAGE value="commit of project" />
     <MESSAGE value="files added" />
     <MESSAGE value="styles for index.html added" />
-    <option name="LAST_COMMIT_MESSAGE" value="styles for index.html added" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>
