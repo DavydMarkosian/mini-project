@@ -88,8 +88,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
                 .then(res => res.json())
                 .then(value => {
-                    console.log(value)
-
                     for (const post of value) {
                         let divTitlePost = document.createElement('div')
                         let btnPost = document.createElement('button')

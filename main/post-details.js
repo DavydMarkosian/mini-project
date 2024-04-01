@@ -36,13 +36,11 @@ async function post() {
     fetch(`https://jsonplaceholder.typicode.com/posts/${idPost}/comments`)
         .then(res => res.json())
         .then((value => {
-            console.log(value)
             let divAllComments = document.createElement('div')
             wrap.appendChild(divAllComments)
             divAllComments.classList.add('wrapComments')
 
             for (const comment of value) {
-                console.log(comment)
 
                 let div = document.createElement('div')
                 let idH6 = document.createElement('h6')
