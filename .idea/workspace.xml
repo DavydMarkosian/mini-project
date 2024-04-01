@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e0ce170-a07c-47d0-8f52-02e4d35f19f8" name="Changes" comment="delete one row in user details css">
+    <list default="true" id="9e0ce170-a07c-47d0-8f52-02e4d35f19f8" name="Changes" comment="deleted logs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/user-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/user-details.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/user-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/user-details.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,8 @@
       <workItem from="1711487733010" duration="78621000" />
       <workItem from="1711926212956" duration="711000" />
       <workItem from="1711929433010" duration="933000" />
-      <workItem from="1711931116780" duration="365000" />
+      <workItem from="1711931116780" duration="1881000" />
+      <workItem from="1711992477777" duration="2565000" />
     </task>
     <task id="LOCAL-00001" summary="commit of project">
       <created>1711490081193</created>
@@ -108,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711926292928</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="deleted logs">
+      <created>1711931677724</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711931677724</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +144,7 @@
     <MESSAGE value="style is changed again. I hope has been the last time" />
     <MESSAGE value="style is changed again. Nope, that one wasn't the last one" />
     <MESSAGE value="delete one row in user details css" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete one row in user details css" />
+    <MESSAGE value="deleted logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted logs" />
   </component>
 </project>

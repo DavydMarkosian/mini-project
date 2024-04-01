@@ -1,76 +1,103 @@
-
 let url = new URL(location.href)
 let id = url.searchParams.get('id');
 
 fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(response => response.json())
     .then(value => {
+
         let div = document.createElement('div')
         document.body.appendChild(div)
         div.classList.add('wrap')
 
-        let h3Name = document.createElement('h3')
-        let h3UserName = document.createElement('h3')
-        let pId = document.createElement('p')
-        let pEmail = document.createElement('p')
-        let pPhone = document.createElement('p')
-        let pWebsite = document.createElement('p')
-        let ulAd = document.createElement('ul')
-        let ulCom = document.createElement('ul')
+//----------------------recursion option (priority to use)
+        function createListRecursion(value, div) {
+            let ul = document.createElement('ul')
+            div.appendChild(ul)
 
-        h3Name.innerText = `name:  ${value.name}`
-        h3UserName.innerText = `username: ${value.username}`
-        pId.innerText = `id: ${value.id}`
-        pEmail.innerText = `email:  ${value.email}`
-        pPhone.innerText = `phone: ${value.phone}`
-        pWebsite.innerText = `website: ${value.website}`
-        ulAd.innerText = `Address:`
-        ulCom.innerText = `Company:`
+            for (const key in value) {
 
-        let address = value.address
-        let {city, street, suite, zipcode, geo} = address
-        let arrAd = [{city}, {street}, {suite}, {zipcode}, {geo}]
+                let li = document.createElement('li')
+                ul.appendChild(li)
+                li.innerText = `${key} : ${value[key]} `
 
-        for (const arrElement of arrAd) {
-            let li = document.createElement('li')
-            li.innerText = `${Object.keys(arrElement)}: ${Object.values(arrElement)}`
-            ulAd.appendChild(li)
-
-            if (Object.keys(arrElement) == 'geo') {
-                let {lat, lng} = geo
-                let arrGeo = [{lat}, {lng}]
-
-                let ulInner = document.createElement('ul')
-                ulAd.appendChild(ulInner)
-
-                for (const arrGeoElement of arrGeo) {
-                    li.innerText = 'geo:'
-
-                    let liInner = document.createElement('li')
-                    ulInner.appendChild(liInner)
-
-                    liInner.innerText = `${Object.keys(arrGeoElement)}: ${Object.values(arrGeoElement)} `
-
+                if (key === 'name' || key === 'username') {
+                    li.innerHTML = `${key} <h3>${value[key]}</h3>`
                 }
 
+                if (typeof value[key] === 'object') {
+                    li.innerText = `${key}: `
+                    createListRecursion(value[key], li)
+                }
             }
-
         }
+        createListRecursion(value, div)
 
-        div.append(h3Name, h3UserName, pId, pEmail, pPhone, pWebsite, ulAd)
 
-        let company = value.company
-        let {bs, catchPhrase, name} = company
-        let arr = [{bs}, {catchPhrase}, {name}]
+        //==================basic option of list  START=========================
+        // let h3Name = document.createElement('h3')
+        // let h3UserName = document.createElement('h3')
+        // let pId = document.createElement('p')
+        // let pEmail = document.createElement('p')
+        // let pPhone = document.createElement('p')
+        // let pWebsite = document.createElement('p')
+        // let ulAd = document.createElement('ul')
+        // let ulCom = document.createElement('ul')
+        //
+        // h3Name.innerText = `name:  ${value.name}`
+        // h3UserName.innerText = `username: ${value.username}`
+        // pId.innerText = `id: ${value.id}`
+        // pEmail.innerText = `email:  ${value.email}`
+        // pPhone.innerText = `phone: ${value.phone}`
+        // pWebsite.innerText = `website: ${value.website}`
+        // ulAd.innerText = `Address:`
+        // ulCom.innerText = `Company:`
+        //
+        // let address = value.address
+        // let {city, street, suite, zipcode, geo} = address
+        // let arrAd = [{city}, {street}, {suite}, {zipcode}, {geo}]
+        //
+        // for (const arrElement of arrAd) {
+        //     let li = document.createElement('li')
+        //     li.innerText = `${Object.keys(arrElement)}: ${Object.values(arrElement)}`
+        //     ulAd.appendChild(li)
+        //
+        //     if (Object.keys(arrElement) == 'geo') {
+        //         let {lat, lng} = geo
+        //         let arrGeo = [{lat}, {lng}]
+        //
+        //         let ulInner = document.createElement('ul')
+        //         ulAd.appendChild(ulInner)
+        //
+        //         for (const arrGeoElement of arrGeo) {
+        //             li.innerText = 'geo:'
+        //
+        //             let liInner = document.createElement('li')
+        //             ulInner.appendChild(liInner)
+        //
+        //             liInner.innerText = `${Object.keys(arrGeoElement)}: ${Object.values(arrGeoElement)} `
+        //
+        //         }
+        //
+        //     }
+        //
+        // }
+        //
+        // div.append(h3Name, h3UserName, pId, pEmail, pPhone, pWebsite, ulAd)
+        //
+        // let company = value.company
+        // let {bs, catchPhrase, name} = company
+        // let arr = [{bs}, {catchPhrase}, {name}]
+        //
+        // for (const arrElement of arr) {
+        //     div.appendChild(ulCom)
+        //
+        //     let li = document.createElement('li')
+        //     li.innerText = `${Object.keys(arrElement)}: ${Object.values(arrElement)}`
+        //     ulCom.appendChild(li)
+        // ===================================basic option END ====================================
 
-        for (const arrElement of arr) {
-            div.appendChild(ulCom)
 
-            let li = document.createElement('li')
-            li.innerText = `${Object.keys(arrElement)}: ${Object.values(arrElement)}`
-            ulCom.appendChild(li)
-        }
-
+        //--------------------hidden part----------------
         let btn = document.createElement('button')
         div.appendChild(btn)
         btn.classList.add('btn')
@@ -102,10 +129,10 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
                         title.innerText = `${post.title}`
                         btnPost.innerText = 'Show post'
-                        btnPost.addEventListener('click',goToPostPage)
+                        btnPost.addEventListener('click', goToPostPage)
 
-                        function goToPostPage(){
-                            location.href=`post-details.html?id=${id}&&posts=${post.id}`
+                        function goToPostPage() {
+                            location.href = `post-details.html?id=${id}&&posts=${post.id}`
                         }
 
                     }
@@ -113,7 +140,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
                 })
             postsWrap.classList.toggle('clear')
             let clearClass = document.querySelector(`.clear`)
-            clearClass? btn.innerText = `Posts of  ${value.name}` : btn.innerText = `Hide posts`
+            clearClass ? btn.innerText = `Posts of  ${value.name}` : btn.innerText = `Hide posts`
 
         }
     })
